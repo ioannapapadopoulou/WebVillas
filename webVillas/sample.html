@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>WebVillas</title>
+ </head>
+   <style type="text/css">
+
+   body{
+   	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/img2.jpg');
+	height: 150vh;	/*Με αυτόν τον τρόπο η εικόνα προσαρμοζεται σε ολη την ιστοσελιδα οχι μονο στο header κομμάτι*/
+	background-size: cover;
+	background-position: center;
+	
+   }
+   #container {   
+	   margin: 0 auto;
+	   width: 80%;
+	   min-width:600px;	   
+ }
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #FFF;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	
+}
+ul li a:hover{
+	background-color: #FFF;
+	color: black;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*τοποθετει τον τιτλο στο κεντρο της σελιδας*/
+	
+}
+.header h1{
+	color: #FFF;
+	font-size: 70px;
+}
+.button {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid #FFF;
+	padding: 10px 30px;
+	color: #FFF;
+	text-decoration: none;
+}
+.btn:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+</style>
+<body>
+   <div id="container">
+	 
+	   <div class="main">
+	  <ul>
+	    <li><a href="index.php">Home</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Sign in</a></li>
+		<li><a href="#">Επικοινωνία</a></li>
+      </ul>
+	</div>
+	<div class="header">
+	  <h1>WebVillas</h1>
+	</div>
+	<div class="button">
+	  <a href='#' class="btn">Δείτε κριτικές</a>
+	  <a href='#' class="btn">Δείτε φωτογραφίες</a>
+	</div>
+ </div>
+ </body>  
+</html>
