@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+body {
+
+	font-family: 'Roboto', sans-serif;
+	background-color: teal;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/back.png');
+	background-size: cover;
+	background-position: center;
+	height: 150vh;
+}
+/*--MENU SIDEBAR--*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	text-decoration: none;
+}
+.sidebar {
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+	transition: all .5s ease;
+  }
+  .sidebar header {
+	font-size: 22px;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	background: #063146;
+	user-select: none;
+  }
+  .sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 18px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+	border-top: 1px solid rgba(255,255,255,.1);
+	transition: .4s;
+  }
+  ul li:hover a{
+	padding-left: 50px;
+  }
+  .sidebar ul a i{
+	margin-right: 16px;
+  }
+  #check{
+	display: none;
+  }
+  label #btn,label #cancel{
+	position: absolute;
+	background: #042331;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+  label #btn{
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+  }
+  label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 17px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+	left: 0;
+  }
+  #check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+	left: 195px;
+  }
+  #check:checked ~ section{
+	margin-left: 250px;
+  }
+  section{
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+  }
+  /*--HEADER--*/
+.header {
+	width: 30%;
+	margin: 50px auto 0px;
+	color: black;
+	background: rgba(211,211,211,0.5);
+	text-align: center;
+	border: 2px solid black;
+	border-bottom: none;
+	border-radius: 10px 10px 10px 10px;
+	padding: 15px;
+}
+.center { 
+  text-align:right;
+ }
+a:link { 
+  color: blue;
+  text-decoration: none;
+ }
+a:hover { 
+	color: red; 
+	text-decoration: none; 
+}
+/*ΦΟΡΜΑ*/
+form, .per{
+	width: 70%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 0px solid black;
+	border-radius: 0px 0px 10px 10px;
+}
+/*--ΚΑΡΤΕΛΑ--*/
+  .wrap{
+	  width: 1000px;
+	  margin: auto;
+	  margin-top: 100px;
+  }
+  .card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+	  transition: 0.4s;
+	  width: 300px;
+	  background: white;
+	  text-align-last: center;
+	  font-size: 16px;
+	  font-family: sans-serif;
+	  float: left;
+	  margin: 10px;
+
+  }
+  .card:hover{
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  }
+  .container{
+	  padding: 2px 16px;
+  }
+ /*ΠΛΑΙΣΙΑ ΣΥΜΠΛΗΡΩΣΕΙΣ DATA*/
+  .input-team {
+	margin: 10px 0px 10px 0px;
+}
+.input-team label {
+	display: block;
+	text-align: left;
+	margin: 5px;
+}
+.input-team input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid black;
+  }
+  /*BUTTON REGISTER/LOGIN..*/
+   .btn {
+	 padding: 10px;
+	 font-size: 15px;
+	 color: white;
+	 background: grey;
+	 border: none;
+	 border-radius: 5px;
+   }
+   /*ERROR MESSAGE*/
+   .error {
+	width: 90%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid red;
+	color: 	rgb (255,99,71);
+	background: #F2DeDe;
+	border-radius: 5px;
+	text-align: left;
+   }
+/*FOOTER */
+#footer {	
+    text-align:left;
+    height: 20px;
+    padding: 10px;
+    margin: 0;
+}
+	
+#leftfooter {
+   float:left;
+}
+
+
+	
+	
+
+	
